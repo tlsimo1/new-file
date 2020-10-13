@@ -1,0 +1,54 @@
+<!doctype html>
+  <html lang="fr">
+    <meta charset="UTF-8" />
+    <title>Films</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <section class="container mt-1">
+    <div class="container">
+      <button class="btn btn-outline-primary "  id="form-add">display form</button>
+      <form action="javascript:void(0);" id="form" class="mt-4" autocomplete="false">
+        <div class="form-group">
+          <label for="title">Titre</label>
+          <input type="text" name="title" id="title" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="year">Année</label>
+          <input type="number" name="year" id="year" class="form-control" required />
+        </div>
+        <input type="hidden" id="hidden" />
+        <button class="btn btn-xs btn-primary" id="form-save">Enregistrer</button>
+        <button class="btn btn-xs" id="form-cancel">Annuler</button>
+      </form>
+      </div>
+    </section>
+    <section class="container mt-1"> 
+      <div class="container">
+            
+            <input type="search" class="form-control-sm" placeholder="Rechercher par titre" />
+
+              <div id="content">
+                <h1 class="text-center">Films</h1>
+                <table class="table table-bordered">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Titre</th>
+                      <th scope="col">Année</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+        
+    </div>
+    
+      
+    
+  </body>
+  <script type="module" src="crud.js"></script>
+
+</html>
